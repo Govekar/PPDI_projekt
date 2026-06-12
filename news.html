@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>News</h1>
+    </header>
+	
+    <nav>
+        <a href="index.html" class="link">Main Page</a>
+        <a href="about_us.html" class="link">About Us</a>
+        <a href="contacts.html" class="link">Contacts</a>
+        <a href="store.html" class="link">Store</a>
+    </nav>
+
+
+    <main id="content"></main>
+
+    <footer>
+        <p>News</p>
+    </footer>
+
+</div>
+
+<script>
+
+fetch("news.xml")
+.then(response => response.text())
+.then(xmlText => {
+
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(xmlText, "text/xml");
+
+    const content = document.getElementById("content");
+
+    xml.querySelectorAll("category").forEach(category => {
+
+        content.innerHTML += `
+            <h2 class="title">
+                ${category.getAttribute("name")}
+            </h2>
+        `;
+
+        let row = document.createElement("div");
+        row.className = "news-row";
+
+        category.querySelectorAll("article").forEach(article => {
+
+            let card = document.createElement("div");
+            card.className = "card";
+
+            card.innerHTML = `
+                <h3>${article.querySelector("title").textContent}</h3>
+
+                <p>
+                    ${article.querySelector("description").textContent}
+                    <a href="${article.querySelector("link").textContent}">
+                        Learn more
+                    </a>
+                </p>
+
+                <img
+                    src="${article.querySelector("image").textContent}"
+                    alt="${article.querySelector("title").textContent}">
+            `;
+
+            row.appendChild(card);
+        });
+
+        content.appendChild(row);
+    });
+
+});
+
+</script>
+
+</body>
+</html>
