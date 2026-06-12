@@ -1,0 +1,94 @@
+@font-face {
+    src: url(BLKCHCRY.ttf);
+    font-family: chr;
+}
+body{
+    margin:0;
+    background:#dcdcdc;
+    font-family: MedievalSharp;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:#cfcfcf;
+    border-top:1px solid #666;
+    border-bottom:1px solid #666;
+    padding:10px;
+}
+
+nav a{
+    color:black;
+    text-decoration:none;
+    font-size:28px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+
+.container{
+    width:1100px;
+    margin:20px auto;
+    border:2px solid #333;
+    background:#bcbcbc;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-family: MedievalSharp;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:60px;
+    font-family: chr;
+}
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    margin:10px 0;
+}
+
+.news-row{
+    display:flex;
+    border-top:2px solid #333;
+}
+
+.card{
+    flex:1;
+    text-align:center;
+    border-right:2px solid #333;
+    padding:10px;
+}
+
+.card:last-child{
+    border-right:none;
+}
+
+.card img{
+    width:220px;
+    height:120px;
+    object-fit:cover;
+}
+
+.title{
+    font-size:50px;
+    padding-top: 25px;
+    text-align:center;
+    font-family: chr;
+}
