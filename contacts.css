@@ -1,0 +1,192 @@
+@font-face {
+    src: url(BLKCHCRY.ttf);
+    font-family: chr;
+}    
+body {
+        max-width: 960px;
+        margin: auto;
+        font-family: MedievalSharp;
+        background: #444444
+    }
+@media(min-width: 800px) {
+    header {
+        background: #3b3b3b;
+    }
+
+    .logo {
+        float: left;
+        margin: 10px;
+    }
+
+    .logo2 {
+        float: right;
+        margin: 10px;
+    }
+    .headline {
+        margin: 20px;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+    .headline1 {
+        font-size: 88px;
+        margin-top: 20px;
+        padding: 20px;
+        margin-bottom: -18px;
+        color: white;
+        font-family: chr;
+    }
+
+    .links {
+        width: 185px;
+        position: fixed;
+        border: solid thick;
+        margin-left: -10%;
+        margin-top: 100px;
+    }
+
+    .link1 {
+        margin: 20px;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+    .link2 {
+        padding-bottom: 3px;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 26px;
+    }
+
+    .link3 {
+        padding-bottom: 3px;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 26px;
+    }
+
+    .link4 {
+        padding-bottom: 3px;
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 26px;
+    }
+
+    .link {
+        color: #ffffff;
+    }
+
+    .sve {
+        background: #afafaf;
+    }
+
+    .h1 {
+        clear: both;
+        float: left;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 28%;
+        margin-right: 19%;
+        font-size: 65px;
+        text-align: center;
+        background: #afafaf;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .upit {
+        float: left;
+        clear: both;
+        margin: 15px;
+        margin-left: 10%;
+        width: 80%;
+        background: #afafaf;
+        border: solid medium #3b3b3b;
+        padding-bottom: 10px;
+    }
+    .choose {
+        width: 30%;
+        float: left;
+        margin-left: 3%;
+        margin-right: 0%;
+    }
+    .review {
+        margin-left: 30px;
+    }
+    .name {
+        width: 30%;
+        float: left;
+        margin-right: 3%;
+    }
+    .name1 {
+        padding-left: 65px;
+    }
+    .email {
+        width: 30%;
+        float: left;
+    }
+    .email1 {
+        padding-left: 65px;
+    }
+    .text {
+        float: left;
+        margin-left: 8.5%;
+    }
+    .text p {
+        padding-left: 60px;
+    }
+    .send {
+        float: left;
+        font-size: 30px;
+        color: #000000;
+        background: #afafaf;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .button {
+        float: left;
+        width: 100px;
+        height: 40px;
+        margin-top: 38px;
+        margin-left: 15%;
+    }
+
+    .logo3 {
+        clear: left;
+        float: right;
+        margin: 10px;
+    }
+
+    .logo4 {
+        float: left;
+        margin: 10px;
+    }
+
+    .sve p {
+        margin: 10px;
+        font-size: 16px;
+    }
+    .map {
+        width: 75%;
+        height: 300px;
+        margin-left: 12.5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .footer1 {
+        text-align: center;
+        margin-top: -10px;
+        padding-top: 10px;
+        font-size: 50px;
+    }
