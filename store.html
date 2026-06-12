@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+<title>Sword Store</title>
+<link rel="stylesheet" href="store.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header>
+    <img src="images/Sword.jpg" alt="logo1" class="logo1">
+    <img src="images/Sword.jpg" alt="logo2" class="logo2">
+    <div class="headline">
+            <h1 class="headline1">Sword store</h1>
+    </div>
+
+ 
+</header>
+
+<div class="banner">
+
+    <div class="discount-bar" id="discounts">
+        Loading discounts...
+    </div>
+
+    
+
+</div>
+
+<nav>
+    <a href="index.html" class="link">Main Page</a>
+    <a href="about_us.html" class="link">About Us</a>
+    <a href="contacts.html" class="link">Contacts</a>
+    <a href="news.html" class="link">News</a>
+</nav>
+
+<div class="products" id="products"></div>
+
+<footer>
+
+    <h2>Store</h2>
+</footer>
+
+</div>
+
+<script>
+
+fetch("store.xml")
+.then(response => response.text())
+.then(xmlText => {
+
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(xmlText,"text/xml");
+
+    loadDiscounts(xml);
+    loadProducts(xml);
+
+});
+
+function loadDiscounts(xml){
+
+    const discounted =
+        xml.getElementsByTagName("item");
+
+    let text = "Discounted items: ";
+
+    for(let i=0;i<discounted.length;i++){
+
+        text += discounted[i].textContent;
+
+        if(i < discounted.length - 1){
+            text += ", ";
+        }
+    }
+
+    document.getElementById("discounts").innerHTML = text;
+}
+
+function loadProducts(xml){
+
+    const products =
+        xml.getElementsByTagName("product");
+
+    const container =
+        document.getElementById("products");
+
+    for(let i=0;i<products.length;i++){
+
+        const name =
+            products[i].getElementsByTagName("name")[0].textContent;
+
+        const price =
+            parseFloat(
+                products[i].getElementsByTagName("price")[0].textContent
+            );
+
+        const discount =
+            parseFloat(
+                products[i].getElementsByTagName("discount")[0].textContent
+            );
+
+        const image =
+            products[i].getElementsByTagName("image")[0].textContent;
+
+        let priceHTML;
+
+        if(discount > 0){
+
+            const discountedPrice =
+                (price * (1 - discount / 100)).toFixed(2);
+
+            priceHTML =
+            `
+            <span class="old-price">
+                €${price.toFixed(2)}
+            </span>
+
+            <span class="discount-price">
+                €${discountedPrice}
+            </span>
+            `;
+        }
+        else{
+
+            priceHTML =
+            `
+            <span class="price">
+                €${price.toFixed(2)}
+            </span>
+            `;
+        }
+
+        const card = document.createElement("div");
+
+        card.className = "card";
+
+        card.innerHTML =
+        `
+        <h3>${name}</h3>
+
+        <img src="${image}" alt="${name}">
+
+        <div class="bottom">
+
+            <div>
+                ${priceHTML}
+            </div>
+
+            <button>Add to cart</button>
+
+        </div>
+        `;
+
+        container.appendChild(card);
+    }
+}
+
+</script>
+
+</body>
+</html>
