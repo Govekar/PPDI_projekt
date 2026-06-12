@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href = "project.xsl" version="1.0"?>
+
+<store>
+
+    <discounted>
+        <item>Khopesh</item>
+        <item>Hook Sword</item>
+        <item>Saber</item>
+    </discounted>
+
+    <products>
+
+        <product>
+            <name>Rapier</name>
+            <price>349.99</price>
+            <discount>0</discount>
+            <image>images/rapier2.jpg</image>
+        </product>
+
+        <product>
+            <name>Zweihander</name>
+            <price>549.99</price>
+            <discount>0</discount>
+            <image>images/zweihander2.jpg</image>
+        </product>
+
+        <product>
+            <name>Khopesh</name>
+            <price>459.99</price>
+            <discount>99</discount>
+            <image>images/khopesh2.jpg</image>
+        </product>
+
+        <product>
+            <name>Khyber Sword</name>
+            <price>209.99</price>
+            <discount>0</discount>
+            <image>images/khyber2.jpg</image>
+        </product>
+
+        <product>
+            <name>Hook Sword</name>
+            <price>599.99</price>
+            <discount>95</discount>
+            <image>images/hooksword2.jpg</image>
+        </product>
+
+        <product>
+            <name>Long Sword</name>
+            <price>299.99</price>
+            <discount>0</discount>
+            <image>images/longsword2.jpg</image>
+        </product>
+
+        <product>
+            <name>Cutlass</name>
+            <price>169.99</price>
+            <discount>0</discount>
+            <image>images/cutlass2.jpg</image>
+        </product>
+
+        <product>
+            <name>Saber</name>
+            <price>749.99</price>
+            <discount>90</discount>
+            <image>images/saber2.jpg</image>
+        </product>
+
+        <product>
+            <name>Gladius</name>
+            <price>199.99</price>
+            <discount>0</discount>
+            <image>images/gladius2.jpg</image>
+        </product>
+
+    </products>
+
+</store>
