@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<news>
+
+    <category name="Events">
+
+        <article>
+            <title>World championship</title>
+            <description>
+                This weeks world championship has begun and is taking place in a bigger arena than ever before.
+            </description>
+            <image>images/arena.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>Biggest sword ever</title>
+            <description>
+                A sword the size of a house was just made by a famous swordsmith Mr. Smith.
+            </description>
+            <image>images/bigsword.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>New technique</title>
+            <description>
+                A sword expert Drows Swonk created a unique new sword technique.
+            </description>
+            <image>images/swordmouth.jpg</image>
+            <link>#</link>
+        </article>
+
+    </category>
+
+    <category name="Fencing">
+
+        <article>
+            <title>New champion</title>
+            <description>
+                Sir Nicolas the 5.312 times world champion lost to Dame Neofris.
+            </description>
+            <image>images/world.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>Tragedy at a tournament</title>
+            <description>
+                Many swordsmen suffered injuries after attempting to use a new sword technique.
+            </description>
+            <image>images/tragedy.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>Sword found</title>
+            <description>
+                A sword has been found in Ireland. It's not a big new discovery but it's a cool sword.
+            </description>
+            <image>images/coolsword.jpg</image>
+            <link>#</link>
+        </article>
+
+    </category>
+
+    <category name="Other">
+
+        <article>
+            <title>Sword found</title>
+            <description>
+                A sword has been found in Ireland. It's not a big new discovery but it's a cool sword.
+            </description>
+            <image>images/coolsword.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>An even greater tragedy</title>
+            <description>
+                The first lightsaber is not going to be made for at least 200 years.
+            </description>
+            <image>images/sad.jpg</image>
+            <link>#</link>
+        </article>
+
+        <article>
+            <title>Sword found</title>
+            <description>
+                A sword has been found in Ireland. We really like this sword.
+            </description>
+            <image>images/coolsword.jpg</image>
+            <link>#</link>
+        </article>
+
+    </category>
+
+</news>
