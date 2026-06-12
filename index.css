@@ -1,0 +1,222 @@
+@font-face {
+    src: url(BLKCHCRY.ttf);
+    font-family: chr;
+}
+body {
+    max-width: 960px;
+    margin: auto;
+    font-family: MedievalSharp;
+    background: #444444
+}
+header {
+    background: #3b3b3b;
+}
+.logo{
+    float: left;
+    margin: 10px;
+}
+.logo2 {
+    float: right;
+    margin: 10px;
+}
+.headline {
+    margin: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.headline1 {
+    font-size: 88px;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: -18px;
+    font-family: chr;
+    color: white;
+}
+.links {
+    width: 170px;
+    position: fixed;
+    border: solid thick;
+    margin-left: -300px;
+    margin-top: 100px;
+}
+.link1 {
+    margin: 20px;
+    text-align:center;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.link2 {
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 26px;
+}
+.link3 {
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 26px;
+}
+.link4 {
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 26px;
+}
+.link {
+    color: #ffffff;
+}
+.sve {
+    background: #afafaf;
+}
+.hl {
+    
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 75px;
+}
+h2 {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.pic{
+    width: 19%;
+    height: 150px;
+}
+.pics {
+    margin-left: 3%;
+}
+p{
+    margin-left: 10px;
+}
+.gladiuspic {
+    width: 32.5%;
+    height: 250px;
+    float: right;
+    margin: 15px;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.gladius {
+    float: left;
+    margin: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+    width: 60%;
+    border: solid medium #3b3b3b;
+}
+.rapier {
+    float: right;
+    margin: 15px;
+    margin-left: 1%;
+    margin-right: 2%;
+    width: 60%;
+    border: solid medium #3b3b3b;
+}
+.rapierpic {
+    width: 30%;
+    height: 550px;
+    float: left;
+    margin: 15px;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+hr{
+    clear: both;
+}
+.zweihander {
+    float: left;
+    margin: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+    width: 60%;
+    border: solid medium #3b3b3b;
+}
+.zweihanderpic {
+    width: 25%;
+    height: 550px;
+    float: right;
+    margin: 15px;
+    margin-left: 0%;
+    margin-right: 6%;
+}
+.khopesh {
+    float: right;
+    margin: 15px;
+    margin-left: 1%;
+    margin-right: 2%;
+    width: 60%;
+    border: solid medium #3b3b3b;
+}
+.khopeshpic {
+    width: 32.5%;
+    height: 450px;
+    float: left;
+    margin: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.hooksword {
+    float: left;
+    margin: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+    width: 60%;
+    border: solid medium #3b3b3b;
+}
+.hookswordpic {
+    width: 32.5%;
+    height: 400px;
+    float: right;
+    margin: 15px;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.table {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border: solid medium;
+    text-align: center;
+}
+td {
+    border: solid medium;
+    width: 10.8%;
+    text-align: center;
+    font-size: 25px;
+}
+.tablesword {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+footer {
+    background: #3b3b3b;
+}
+
+.footer1 {
+    margin-top: -10px;
+    padding-top: 60px;
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+.footer {
+    color: #ffffff;
+    text-align: center;
+}
+.logo3 {
+    float: left;
+    margin: 10px;
+}
+
+.logo4 {
+    float: right;
+    margin: 10px;
+}
